@@ -1,0 +1,112 @@
+/* ===== enhance.css — muat SETELAH style.css ===== */
+
+/* --- spacing & hierarchy --- */
+@media(min-width:1200px){.container{max-width:1100px}}
+.section{padding:90px 24px 100px}
+.title{margin-bottom:46px}
+.eyebrow{display:block;text-align:center;font:800 .75rem 'Manrope',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--brown2);margin-bottom:10px}
+.card h3{font-size:1.2rem}
+.card p{color:#5a3f28}
+
+/* --- consistent doodles --- */
+.deco{filter:drop-shadow(2px 2px 0 rgba(91,52,24,.25))}
+@keyframes twinkle{0%,100%{opacity:.5;transform:scale(.9) rotate(0)}50%{opacity:1;transform:scale(1.15) rotate(15deg)}}
+
+/* --- cards --- */
+.exp-card .emoji,.cert .emoji{display:grid;place-items:center;width:62px;height:62px;font-size:1.7rem;border-radius:50%;background:var(--yellow);border:3px solid var(--brown);box-shadow:3px 3px 0 var(--brown);margin-bottom:14px}
+.chips span{transition:transform .2s,background .2s}
+.chips span:hover{transform:translateY(-2px) rotate(-2deg);background:#ffd25c}
+.t-item .card:hover{transform:translateX(6px)}
+.t-item:first-child .t-dot{animation:pulse 2.6s ease-in-out infinite}
+.cert{display:flex;flex-direction:column;align-items:flex-start}
+.cert .btn{margin-top:auto}
+.cert p{margin-bottom:12px}
+
+/* --- about --- */
+.scrap::before{content:"“";position:absolute;top:-2px;left:16px;font:5rem/1 'Rye',serif;color:var(--red);opacity:.22}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
+.stat{text-align:center;padding:18px 10px;background:var(--yellow);border:3px solid var(--brown);border-radius:var(--r);box-shadow:var(--pop);transition:transform .25s}
+.stat:hover{transform:translateY(-4px) rotate(-1.5deg)}
+.stat b{display:block;font:400 2rem/1.2 'Rye',serif;color:var(--brown)}
+.stat span{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+
+/* --- tech marquee --- */
+.marquee{overflow:hidden;margin-top:44px;padding:14px 0;border-block:3px solid var(--brown);background:var(--card);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.m-track{display:flex;width:max-content;animation:marquee 34s linear infinite}
+.marquee:hover .m-track{animation-play-state:paused}
+.m-track span{margin-right:14px;padding:3px 16px;border:2px solid var(--brown);border-radius:99px;background:var(--yellow);color:var(--brown);font-weight:800;font-size:.85rem;white-space:nowrap}
+.m-track span::before{content:"✦ ";color:var(--red)}
+.m-cap{text-align:center;margin-top:30px;font-size:1.2rem}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* --- projects --- */
+.grid-2>:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 13px);justify-self:center}
+.project.exp-card{display:flex;flex-direction:column}
+.project .chips{margin-bottom:14px}
+.project .view-more{align-self:flex-start;margin-top:auto}
+.preview{height:clamp(240px,34vw,360px)}
+.preview img{transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.project:hover .preview img{transform:scale(1.08)}
+.preview::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(circle at 82% 18%,rgba(255,255,255,.35),transparent 40%),linear-gradient(180deg,transparent 55%,rgba(91,52,24,.5))}
+.preview::after{z-index:2}
+
+/* --- buttons & nav micro-interactions --- */
+.btn{position:relative;overflow:hidden}
+.btn::before{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn:hover::before{left:130%}
+.btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--brown)}
+.nav-links a{transition:.25s}
+.nav-links a:hover{transform:translateY(-2px)}
+.nav-links a:active{transform:scale(.95)}
+.nav-logo:hover .ico{animation-duration:.8s}
+.burger{transition:transform .3s}.burger:hover{transform:rotate(90deg)}
+.btn:focus-visible,.nav-links a:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+
+/* --- contact & footer --- */
+.contact{padding:60px 28px}
+.contact p{font-size:1.05rem}
+.footer{padding:40px 20px 34px}
+.footer-tag{font-family:'Permanent Marker',cursive;color:var(--yellow);font-size:1.25rem;margin-bottom:14px}
+.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 18px;margin-bottom:18px}
+.footer-links a{position:relative;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.footer-links a::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;background:var(--yellow);transition:width .3s}
+.footer-links a:hover{opacity:1;color:var(--yellow)}
+.footer-links a:hover::after{width:100%}
+
+/* --- sparkle --- */
+.spk{position:fixed;z-index:200;pointer-events:none;color:var(--yellow);text-shadow:1px 1px 0 var(--brown);animation:spk .85s ease-out forwards}
+@keyframes spk{from{opacity:1;transform:translate(-50%,-50%) scale(.4)}to{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.2) rotate(120deg)}}
+
+/* --- responsive --- */
+@media(max-width:820px){
+  .section{padding:70px 20px 80px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid-2>:last-child:nth-child(odd){width:auto}
+  .m-track{animation-duration:26s}
+}
+@media(max-width:560px){
+  .section{padding:56px 16px 70px}
+    .title{margin-bottom:34px}
+  .contact{padding:48px 18px}
+  .exp-card .emoji,.cert .emoji{width:54px;height:54px}
+}
+@media(hover:none){.spk{display:none}}
+@media(prefers-reduced-motion:reduce){.marquee{overflow-x:auto}.btn::before{display:none}}
+
+/* ===== background fill (anti-kosong) ===== */
+/* 2. pita warna selebar layar untuk section selang-seling */
+#education,#skills,#certificates{background:rgba(233,207,159,.38);box-shadow:0 0 0 100vmax rgba(233,207,159,.38);clip-path:inset(0 -100vmax);
+  border-block:3px dashed rgba(138,85,48,.35)}
+#experience,#contact{background:radial-gradient(circle at 50% 0,rgba(244,185,46,.14),transparent 60%)}
+
+/* 3. doodle samping mengisi margin kosong di layar lebar */
+
+/* ===== icon doodle di margin (pengganti bintang) ===== */
+.deco{opacity:.4}
+.sd{display:none;position:absolute;width:clamp(56px,5.5vw,84px);height:clamp(56px,5.5vw,84px);pointer-events:none;color:var(--brown2);
+  filter:drop-shadow(2px 2px 0 rgba(91,52,24,.5))}
+.sd-l{left:calc(-1 * clamp(56px,5.5vw,84px) - 12px)}
+.sd-r{right:calc(-1 * clamp(56px,5.5vw,84px) - 12px)}
+.sd.i-hat,.sd.i-boot{color:var(--brown)}.sd.i-sun{color:var(--yellow)}.sd.i-horseshoe{color:var(--brown2)}
+@media(min-width:1280px){.sd{display:block}}

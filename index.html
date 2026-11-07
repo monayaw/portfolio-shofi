@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Shofi Maulana Shofa, Informatics Engineering Student.">
+  <meta name="keywords" content="Shofi Maulana Shofa, Portfolio, Web Development, Flutter, UI UX">
+  <meta name="author" content="Shofi Maulana Shofa">
+  <title>Shofi Maulana Shofa | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rye&family=Permanent+Marker&family=Manrope:wght@400;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="enhance.css">
+</head>
+
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="star" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M12 2l2.9 6.3 6.8.7-5.1 4.6 1.5 6.7L12 17l-6.100 3.300 1.500-6.700L2.300 9l6.800-.7z" />
+      </symbol>
+      <symbol id="horseshoe" viewBox="0 0 24 24">
+        <path d="M5.500 21V11a6.500 6.500 0 0113 0v10" fill="none" stroke="currentColor" stroke-width="4" />
+        <g fill="#fff8e8">
+          <circle cx="5.500" cy="14" r=".9" />
+          <circle cx="5.500" cy="18" r=".9" />
+          <circle cx="18.500" cy="14" r=".9" />
+          <circle cx="18.500" cy="18" r=".9" />
+          <circle cx="7" cy="9" r=".9" />
+          <circle cx="17" cy="9" r=".9" />
+        </g>
+      </symbol>
+      <symbol id="hat" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M2 16c3 2 7 3 10 3s7-1 10-3c-2 0-3-1-4-3l-1-6c-.3-2-2-3-3.500-3-1 1-2 1.500-3 1.500S10 5 9 4C7.500 4 6 5 5.700 7L5 13c-1 2-2 3-3 3z" />
+        <path d="M6 12c4 1.500 8 1.500 12 0" stroke="#fff8e8" stroke-opacity=".6" stroke-width="1.500" fill="none" />
+      </symbol>
+      <symbol id="boot" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M8 2h6v10l6 3c1 .5 1.500 1.500 1.500 3v3H5V17c0-1 .5-1.500 1.500-2L8 14z" />
+        <path d="M8 7h6" stroke="#fff8e8" stroke-opacity=".6" stroke-width="1.500" />
+      </symbol>
+      <symbol id="cactus" viewBox="0 0 24 24">
+        <path fill="#5a8f3c"
+          d="M10 22V6a2 2 0 014 0v16zM4 10a1.500 1.500 0 013 0v4h3v2H6a2 2 0 01-2-2zM20 8a1.500 1.500 0 00-3 0v4h-3v2h4a2 2 0 002-2z" />
+      </symbol>
+      <symbol id="sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="5" fill="currentColor" />
+        <path
+          d="M12 1.500v3M12 19.500v3M1.500 12h3M19.500 12h3M4.600 4.600l2 2M17.400 17.400l2 2M4.600 19.400l2-2M17.400 6.600l2-2"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="tumbleweed" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.500" />
+        <path d="M4 9c5-3 11 3 16 0M3.500 14c6-4 11 4 17 0M8 4c3 5-3 11 2 16M15 4c-3 5 3 11-2 16" fill="none"
+          stroke="currentColor" stroke-width="1.200" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <nav class="nav">
+    <a href="#home" class="nav-logo">shofi<span><svg class="ico">
+          <use href="#star" />
+        </svg></span></a>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="burger" aria-label="Menu">☰</label>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="progress"></div>
+  </nav>
+
+  <!-- HOME -->
+  <div class="hero-wrap">
+    <div class="sky" aria-hidden="true"><i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i></div>
+    <header id="home" class="hero container">
+      <svg class="doodle d1">
+        <use href="#star" />
+      </svg><svg class="doodle d2">
+        <use href="#horseshoe" />
+      </svg><svg class="doodle d3">
+        <use href="#boot" />
+      </svg><svg class="doodle d4">
+        <use href="#cactus" />
+      </svg><svg class="doodle d5">
+        <use href="#hat" />
+      </svg><svg class="doodle d6">
+        <use href="#horseshoe" />
+      </svg><svg class="fly f1">
+        <use href="#tumbleweed" />
+      </svg><svg class="fly f2">
+        <use href="#tumbleweed" />
+      </svg><svg class="fly f3">
+        <use href="#tumbleweed" />
+      </svg>
+      <div class="hero-text reveal">
+        <p class="hand">Hello, I'm</p>
+        <h1>Shofi Maulana Shofa</h1>
+        <p class="typing">I'm a <span id="typed">Web Developer</span><span class="cursor">|</span></p>
+        <p class="lead">Informatics Engineering student who loves web development, mobile apps, and UI/UX design. I
+          enjoy turning ideas into creative, useful digital experiences.</p>
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">Explore My Work</a>
+          <!-- TODO: letakkan file CV di assets/cv-shofi.pdf -->
+          <a href="assets/cv-shofi.pdf" class="btn btn-outline" download>Download CV</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <svg class="moon">
+          <use href="#sun" />
+        </svg>
+        <div class="poster"><span class="tape"></span>
+          <h3>WANTED</h3>
+          <div class="photo-frame"><img src="assets/shofi.png" alt="Foto profil Shofi Maulana Shofa"></div>
+          <p class="poster-role">Web &amp; Mobile Developer<br>UI/UX Designer</p>
+          <p class="poster-reward">REWARD: Great ideas ★</p>
+        </div>
+      </div>
+    </header>
+    <div class="desert" aria-hidden="true">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path fill="#e3b56f"
+          d="M0 120V70h120l20-30h110l20 30h140l30-20h90l20-30h120l20 30h160l30 20h180l20-25h120v75z" />
+        <path fill="#c98f4a" d="M0 120V95c150-30 300 20 450-5s300-30 450 0 200 15 300-5v35z" />
+      </svg>
+      <svg class="cact" style="left:7%">
+        <use href="#cactus" />
+      </svg><svg class="cact c-s" style="left:16%">
+        <use href="#cactus" />
+      </svg><svg class="cact" style="right:9%">
+        <use href="#cactus" />
+      </svg>
+      <svg class="horse" viewBox="-14 -12 140 100" aria-hidden="true">
+        <circle class="dust" cx="2" cy="78" r="5" />
+        <circle class="dust d2" cx="-6" cy="72" r="4" />
+        <circle class="dust d3" cx="-10" cy="80" r="3" />
+        <g class="h-body">
+          <path class="tail" d="M28 28C12 28 8 42 10 56 15 46 20 40 31 38z" />
+          <rect class="leg l1" x="30" y="40" width="7" height="32" rx="3" />
+          <rect class="leg l2" x="38" y="40" width="7" height="32" rx="3" />
+          <rect class="leg l3" x="66" y="40" width="7" height="32" rx="3" />
+          <rect class="leg l4" x="74" y="40" width="7" height="32" rx="3" />
+          <ellipse class="torso" cx="55" cy="34" rx="29" ry="14" />
+          <path class="torso" d="M74 26L88 6 97 3 110 14 105 19 97 14 87 32z" />
+          <path class="mane" d="M74 24L86 5 84 12 77 28z" />
+          <circle cx="101" cy="9" r="1.3" fill="#fff8e8" />
+          <rect x="51" y="12" width="12" height="20" rx="5" fill="#f4b92e" stroke="#5b3418" stroke-width="1.5" />
+          <circle cx="57" cy="8" r="5.5" fill="#f0c8a0" stroke="#5b3418" stroke-width="1.2" />
+          <use href="#hat" x="45" y="-12" width="24" height="20" style="color:#5b3418" />
+          <path d="M60 18c6 4 10 8 12 12" stroke="#c8312b" stroke-width="3" stroke-linecap="round" fill="none" />
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="cow" aria-hidden="true"></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <svg class="deco r a2">
+      <use href="#star" />
+    </svg>
+    <h2 class="title reveal">About Me <span><svg class="ico">
+          <use href="#horseshoe" />
+        </svg></span></h2>
+    <div class="two-col reveal">
+      <div class="card scrap">
+        <p class="hand big">Hi, it's Shofi!</p>
+        <p>Mahasiswa D4 Teknik Informatika di Politeknik Negeri Jember – PSDKU Nganjuk.</p>
+        <p>Aku tertarik pada teknologi, programming, dan desain. Aku suka belajar hal baru, mengasah kemampuan, dan
+          mengubah ide kreatif menjadi solusi yang berguna.</p>
+      </div>
+      <div class="card info">
+        <ul class="info-list">
+          <li><b>Name</b> Shofi Maulana Shofa</li>
+          <li><b>Status</b> Informatics Engineering Student</li>
+          <li><b>Campus</b> Polije – PSDKU Nganjuk</li>
+          <li><b>Interests</b></li>
+        </ul>
+        <div class="chips">
+          <span>Web Development</span><span>Mobile App</span><span>UI/UX Design</span><span>Software
+            Development</span><span>Graphic Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section container">
+    <svg class="deco l a3">
+      <use href="#cactus" />
+    </svg>
+    <h2 class="title reveal">Education <span><svg class="ico">
+          <use href="#cactus" />
+        </svg></span></h2>
+    <div class="timeline">
+      <div class="t-item reveal"><span class="t-dot"></span>
+        <div class="card"><span class="date">2025 – Sekarang</span>
+          <h3>Politeknik Negeri Jember</h3>
+          <p>D4 Teknik Informatika</p>
+        </div>
+      </div>
+      <div class="t-item reveal"><span class="t-dot"></span>
+        <div class="card"><span class="date">2022 – 2025</span>
+          <h3>SMK Negeri 2 Bojonegoro</h3>
+          <p>Teknik Komputer dan Jaringan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <svg class="deco r a4">
+      <use href="#hat" />
+    </svg>
+    <h2 class="title reveal">Experience <span><svg class="ico">
+          <use href="#star" />
+        </svg></span></h2>
+    <div class="grid-3 exp-grid">
+      <a class="card exp-card reveal" href="experience.html#exp-bps"><span class="emoji">📊</span>
+        <h3>BPS Bojonegoro</h3>
+        <p>Petugas Pendataan dan Pengelolaan Data</p><span class="view-more">View Details <b>→</b></span>
+      </a>
+      <a class="card exp-card reveal" href="experience.html#exp-radar"><span class="emoji">📰</span>
+        <h3>Radar Bojonegoro</h3>
+        <p>Content Support</p><span class="view-more">View Details <b>→</b></span>
+      </a>
+      <a class="card exp-card reveal" href="experience.html#exp-volunteer"><span class="emoji">🤠</span>
+        <h3>Kepanitiaan &amp; Volunteer</h3>
+        <p>Kepanitiaan dan kegiatan volunteer.</p><span class="view-more">View Details <b>→</b></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <svg class="deco l a1">
+      <use href="#boot" />
+    </svg>
+    <h2 class="title reveal">Skills <span><svg class="ico">
+          <use href="#horseshoe" />
+        </svg></span></h2>
+    <div class="grid-3">
+      <div class="card reveal"><span class="badge"><svg class="ico">
+            <use href="#star" />
+          </svg></span>
+        <h3>Programming</h3>
+        <div class="chips">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>Dart</span><span>Java</span>
+        </div>
+      </div>
+      <div class="card reveal"><span class="badge"><svg class="ico">
+            <use href="#star" />
+          </svg></span>
+        <h3>Framework &amp; Development</h3>
+        <div class="chips"><span>Flutter</span><span>React</span><span>Laravel</span><span>Native MVC</span></div>
+      </div>
+      <div class="card reveal"><span class="badge"><svg class="ico">
+            <use href="#star" />
+          </svg></span>
+        <h3>Database</h3>
+        <div class="chips"><span>MySQL</span><span>SQLite</span><span>Firebase</span></div>
+      </div>
+      <div class="card reveal"><span class="badge"><svg class="ico">
+            <use href="#star" />
+          </svg></span>
+        <h3>Tools</h3>
+        <div class="chips"><span>GitHub</span><span>VS
+            Code</span><span>XAMPP</span><span>Laragon</span><span>Canva</span><span>Photoshop</span></div>
+      </div>
+      <div class="card reveal"><span class="badge"><svg class="ico">
+            <use href="#star" />
+          </svg></span>
+        <h3>Design</h3>
+        <div class="chips"><span>UI/UX Design</span><span>Wireframing</span><span>Prototyping</span><span>Graphic
+            Design</span></div>
+      </div>
+      <div class="card reveal"><span class="badge"><svg class="ico">
+            <use href="#star" />
+          </svg></span>
+        <h3>Soft Skills</h3>
+        <div class="chips"><span>Communication</span><span>Teamwork</span><span>Problem
+            Solving</span><span>Adaptability</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cow" aria-hidden="true"></div>
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <svg class="deco r a2">
+      <use href="#horseshoe" />
+    </svg>
+    <h2 class="title reveal">Projects <span><svg class="ico">
+          <use href="#sun" />
+        </svg></span></h2>
+    <!-- Foto project: simpan di assets/projects/ (madrasahku.png, pakto.png, decha.png). Kalau file belum ada, background gradient tetap tampil. -->
+    <div class="grid-2 exp-grid">
+      <a class="card project exp-card reveal" href="projects.html#proj-madrasahku">
+        <div class="preview pv1"><img src="assets/projects/madrasahku.png" alt="Preview Madrasahku" loading="lazy"
+            onerror="this.remove()"></div>
+        <h3>Madrasahku (Coming Soon)</h3>
+        <p>Aplikasi pembelajaran mobile berbasis Flutter.</p>
+        <div class="chips"><span>Flutter</span><span>Dart</span></div>
+        <span class="view-more">View Details <b>→</b></span>
+      </a>
+      <a class="card project exp-card reveal" href="projects.html#proj-pakto">
+        <div class="preview pv2"><img src="assets/pakto.jpg" alt="Preview Potong Rambut Pak To" loading="lazy"
+            onerror="this.remove()"></div>
+        <h3>Potong Rambut Pak To</h3>
+        <p>Aplikasi pemesanan layanan barbershop.</p>
+        <div class="chips"><span>Booking</span><span>Barbershop</span></div>
+        <span class="view-more">View Details <b>→</b></span>
+      </a>
+      <a class="card project exp-card reveal" href="projects.html#proj-decha">
+        <div class="preview pv3"><img src="assets/decha.jpeg" alt="Preview Decha Booth" loading="lazy"
+            onerror="this.remove()"></div>
+        <h3>Decha Booth</h3>
+        <p>Website pemesanan makanan.</p>
+        <div class="chips"><span>Web</span><span>Food Ordering</span></div>
+        <span class="view-more">View Details <b>→</b></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="section container">
+    <svg class="deco l a3">
+      <use href="#sun" />
+    </svg>
+    <h2 class="title reveal">Certificates <span><svg class="ico">
+          <use href="#hat" />
+        </svg></span></h2>
+    <!-- Isi data-link dengan file/URL sertifikat, mis. assets/certs/cefr.pdf -->
+    <div class="grid-3">
+      <div class="card cert reveal"><span class="emoji">🏅</span>
+        <h3>English Proficiency Test</h3>
+        <p>CEFR A2</p><a class="btn btn-small btn-outline"
+          data-link="https://drive.google.com/file/d/1vi_1mXmhlnJXb-NImeqciDXssXkh6Cqy/view?usp=drivesdk">View
+          Certificate</a>
+      </div>
+      <div class="card cert reveal"><span class="emoji">🎓</span>
+        <h3>LKMM Pra-TD</h3>
+        <p>Pelatihan kepemimpinan mahasiswa</p><a class="btn btn-small btn-outline"
+          data-link="https://drive.google.com/file/d/1NkX_KlvcRdeoI2TzdOry7qVIe9ApB31m/view?usp=drivesdk">View
+          Certificate</a>
+      </div>
+      <div class="card cert reveal"><span class="emoji">💻</span>
+        <h3>UKK TKJ</h3>
+        <p>Uji Kompetensi Keahlian</p><a class="btn btn-small btn-outline"
+          data-link="https://drive.google.com/file/d/1uKnSeDElE3QpQTCJ4Ap6qn4DYD3wPJnL/view?usp=drivesdk">View
+          Certificate</a>
+      </div>
+      <div class="card cert reveal"><span class="emoji">📰</span>
+        <h3>PKL Radar Bojonegoro</h3>
+        <p>Praktik Kerja Lapangan</p><a class="btn btn-small btn-outline"
+          data-link="https://drive.google.com/file/d/1s6SrZeJ9Hv5nyN9D5PfQ_wRGD9-125HG/view?usp=drivesdk">View
+          Certificate</a>
+      </div>
+      <div class="card cert reveal"><span class="emoji">📊</span>
+        <h3>PKL BPS Bojonegoro</h3>
+        <p>Praktik Kerja Lapangan</p><a class="btn btn-small btn-outline"
+          data-link="https://drive.google.com/file/d/1gxMj2HO33z0Mw3xaxvkCzVmCQnv2wgSq/view?usp=drivesdk">View
+          Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <svg class="deco l a1">
+      <use href="#star" />
+    </svg>
+    <div class="contact card reveal">
+      <h2 class="title">Let's create something amazing together! <span><svg class="ico">
+            <use href="#cactus" />
+          </svg></span></h2>
+      <p>Terbuka untuk kesempatan magang, kolaborasi, dan proyek kreatif.</p>
+      <div class="btn-row center-row">
+        <!-- TODO: ganti dengan email dan URL profil aslimu -->
+        <a class="btn btn-primary" href="mailto:shofimaulanashfa@gmail.com">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 5h18v14H3z M3 5l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linejoin="round" />
+          </svg>Email</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/shofi-maulana-shofa-32b37a404/" target="_blank"
+          rel="noopener">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M4 9h4v11H4zM6 3.5a2 2 0 110 4 2 2 0 010-4zM10 9h4v1.6c.6-1 1.8-1.9 3.6-1.9 3 0 3.4 2 3.4 4.6V20h-4v-5.8c0-1.3 0-2.6-1.600-2.600S14 12.800 14 14.200V20h-4z"
+              fill="currentColor" />
+          </svg>LinkedIn</a>
+        <a class="btn btn-outline" href="https://github.com/monayaw" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2a10 10 0 00-3.200 19.500c.5.100.7-.2.700-.5v-1.800c-2.800.6-3.400-1.200-3.400-1.200-.5-1.200-1.100-1.500-1.100-1.500-.9-.6.100-.6.100-.6 1 .1 1.500 1 1.500 1 .9 1.500 2.300 1.100 2.900.8.100-.7.400-1.100.6-1.400-2.200-.3-4.600-1.100-4.600-5 0-1.100.4-2 1-2.700-.1-.3-.4-1.300.1-2.700 0 0 .8-.3 2.800 1a9.600 9.600 0 015 0c1.900-1.300 2.800-1 2.800-1 .5 1.400.2 2.400.1 2.700.6.700 1 1.600 1 2.700 0 3.900-2.400 4.700-4.600 5 .4.300.7.900.7 1.800v2.700c0 .3.200.6.700.5A10 10 0 0012 2z"
+              fill="currentColor" />
+          </svg>GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cow" aria-hidden="true"></div>
+  <footer class="footer">
+    <p><svg class="ico">
+        <use href="#cactus" />
+      </svg><svg class="ico">
+        <use href="#star" />
+      </svg><svg class="ico">
+        <use href="#horseshoe" />
+      </svg> &nbsp;Copyright © 2026 Shofi Maulana Shofa&nbsp; <svg class="ico">
+        <use href="#horseshoe" />
+      </svg><svg class="ico">
+        <use href="#star" />
+      </svg><svg class="ico">
+        <use href="#cactus" />
+      </svg></p>
+  </footer>
+
+  <a href="#home" class="to-top" aria-label="Kembali ke atas"><svg class="ico">
+      <use href="#star" />
+    </svg></a>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+  <script src="enhance.js"></script> 
+</body>
+
+</html>
